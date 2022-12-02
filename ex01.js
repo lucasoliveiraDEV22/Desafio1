@@ -7,7 +7,7 @@
 // printingNumber ()
 //OU dessa:
 const count = function (number) {
-    for (let i=1; i<=number; i++){
+    for (let i=1; i<number; i++){
         console.log(i)
     }
     return
