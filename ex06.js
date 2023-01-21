@@ -39,8 +39,13 @@ const people =  [
      for (let i=0; i < personInformation.length; i++){
         wageAverage = wageAverage + personInformation [i].salary
         averageChildren = averageChildren + personInformation [i].numberChildren
-        heighestSalary = 
-            heighestSalary < personInformation[i].salary ? personInformation[i].salary :heighestSalary
+        // heighestSalary = 
+        //     heighestSalary < personInformation[i].salary ? personInformation[i].salary :heighestSalary
+        if (heighestSalary < personInformation[i].salary) {
+           heighestSalary =  personInformation [i].salary
+        } else {
+            heighestSalary = heighestSalary
+        }
     }
      const wageMean = wageAverage/personInformation.length;
      const meanChildren = averageChildren/personInformation.length;
